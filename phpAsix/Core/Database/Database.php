@@ -24,4 +24,8 @@ class Database
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
 
+    public function getConnection() {
+        return $this->pdo;
+    }
+
 }

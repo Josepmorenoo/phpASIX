@@ -1,5 +1,5 @@
 {
-    "name": "josepmoreno/phpasix",
+    "name": "jordivega/phpasix",
     "description": "Projecte PHP Asix",
     "type": "project",
     "require": {
@@ -8,7 +8,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Core\\": "Core/"
+            "Core\\": "Core/",
+            "App\\": "App/"
         },
         "files" : [
             "Core/helpers.php"
@@ -16,9 +17,8 @@
     },
     "authors": [
         {
-            "name": "josepmoreno",
-            "email": "josepmoreno@iesebre.com"
+            "name": "jordi",
+            "email": "jordivega@iesebre.com"
         }
     ]
-
 }

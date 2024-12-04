@@ -1,5 +1,5 @@
 <?php
-//    require 'app/index.php';
+//    require 'App/index.php';
 //    require 'resources/views/index.blade.php';
 
 //carreguem el fitxer autoload que carrega les dependencies definides al composer.json

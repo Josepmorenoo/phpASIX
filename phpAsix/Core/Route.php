@@ -2,6 +2,7 @@
 //Fitxer per gestionar les rutes
 namespace Core;
 
+use Exception;
 use http\Exception\RuntimeException;
 
 class Route
@@ -26,21 +27,34 @@ class Route
     //funcio per redirigir la url solicitada a un controlador
     public function redirect($uri)
     {
-        //si la ruta no existeix redirigim a la vista d'error
-        if(!array_key_exists($uri, $this->routes)) {
-            //retornem vista
-            require '../resources/views/errors/404.blade.php';
-            //retornem ruta
-            return $this;
-        }
+        foreach ($this->routes as $route => $action) {
+            $pattern = preg_replace('/\{[^\/]+\}/', '([^/]+)', $route);
+            $pattern = "#^$pattern$#i";
 
-        //si no troba el controlador
-        if (!file_exists($this->routes[$uri])) {
-            throw new RuntimeException("No s'ha trobat el controlador:". $this->routes[$uri]);
+            if (preg_match($pattern, $uri, $matches)) {
+                array_shift($matches);
+
+                list($controllerPath, $action) = explode('@', $action);
+
+                $controllerClass = 'App\\Controllers\\' . basename($controllerPath, '.php');
+
+                if (!class_exists($controllerClass)) {
+                    throw new Exception("Controller $controllerClass not found");
+                }
+
+                $controller = new $controllerClass();
+
+                if (!method_exists($controller, $action)) {
+                    throw new Exception("Action $action not found in controller $controllerClass");
+                }
+
+                return $controller->$action(...$matches);
+            }
         }
 
         //retornem les rutes
-        return require $this->routes[$uri];
+        require  '../resources/views/errors/404.blade.php';
+        return $this;
     }
 
 

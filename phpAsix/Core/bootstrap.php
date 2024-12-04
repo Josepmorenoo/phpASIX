@@ -27,3 +27,4 @@ App::bind('database', new Database(
 
 //enllacem instancia rutes
 App::bind('router', (new Route())->define($routes));
+

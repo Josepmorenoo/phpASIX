@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94bf14ba-5f59-400d-a564-6dbb2ea9d670" name="Changes" comment="" />
+    <list default="true" id="94bf14ba-5f59-400d-a564-6dbb2ea9d670" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App/Controllers/JugadorsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Models/Jugador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a7597c7-ff40-4d8f-a061-c7adb312eb7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a7597c7-ff40-4d8f-a061-c7adb312eb7f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Database/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Database/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Database/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +41,15 @@
       <executable path="composer" />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
@@ -42,14 +74,15 @@
   &quot;keyToString&quot;: {
     &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alumnat/code/phpASIX/index.php&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alumnat/code/phpAsix/resources/views&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -61,6 +94,12 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/jugadors" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +126,17 @@
       <workItem from="1729698305776" duration="4395000" />
       <workItem from="1729778674688" duration="1299000" />
       <workItem from="1730304135820" duration="2404000" />
-      <workItem from="1730909554520" duration="796000" />
+      <workItem from="1730909554520" duration="3543000" />
+      <workItem from="1732723670822" duration="393000" />
+      <workItem from="1732803062858" duration="4878000" />
+      <workItem from="1732897895008" duration="2193000" />
+      <workItem from="1732902074215" duration="599000" />
+      <workItem from="1733152967667" duration="6798000" />
+      <workItem from="1733164672009" duration="2718000" />
+      <workItem from="1733236932524" duration="718000" />
+      <workItem from="1733238171271" duration="6291000" />
+      <workItem from="1733248655132" duration="2126000" />
+      <workItem from="1733325235730" duration="1851000" />
     </task>
     <servers />
   </component>
