@@ -52,6 +52,7 @@ class Route
             }
         }
 
+
         //retornem les rutes
         require  '../resources/views/errors/404.blade.php';
         return $this;

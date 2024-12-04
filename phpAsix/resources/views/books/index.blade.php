@@ -141,6 +141,7 @@
             <td><?= htmlspecialchars($book->author); ?></td>
             <td><?= $book->releaseYear; ?></td>
             <td class="actions">
+                <a href="/books/show/<?= $book->id ?>" class="btn btn-details">Veure Detalls</a>
                 <a href="/books/edit/<?= $book->id ?>">Editar</a>
                 <a href="/books/confirm-delete/<?= $book->id ?>">Eliminar</a>
             </td>

@@ -13,13 +13,14 @@ class Book {
     public $releaseYear;
 
     public function __construct($data = []) {
-        if(isset($data['id'])) {
+        if (isset($data['id'])) {
             $this->id = $data['id'];
         }
-        $this->name = $data['name'];
-        $this->author = $data['author'];
-        $this->releaseYear = $data['releaseYear'];
+        $this->name = $data['name'] ?? null;
+        $this->author = $data['author'] ?? null;
+        $this->releaseYear = $data['releaseYear'] ?? null;
     }
+
 
     public function save() {
         $db = App::get('database')->getConnection();
@@ -57,7 +58,7 @@ class Book {
         return $books;
     }
 
-    public function find($id) {
+    public  function find($id) {
         $db = App::get('database')->getConnection();
         $statement = $db->prepare('SELECT * FROM ' . static::$table . ' WHERE id = :id');
         $statement->bindValue(':id', $id);
@@ -65,6 +66,7 @@ class Book {
         $data = $statement->fetch();
         return $data ? new self($data) : null;
     }
+
 
     public function delete($id) {
         $db = App::get('database')->getConnection();

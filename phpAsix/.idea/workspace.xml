@@ -5,30 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94bf14ba-5f59-400d-a564-6dbb2ea9d670" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App/Controllers/JugadorsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Models/Jugador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jugadors/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a7597c7-ff40-4d8f-a061-c7adb312eb7f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a7597c7-ff40-4d8f-a061-c7adb312eb7f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Database/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Database/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Database/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Database/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/JugadorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/JugadorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Models/Book.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/books/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/books/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +119,7 @@
       <workItem from="1733236932524" duration="718000" />
       <workItem from="1733238171271" duration="6291000" />
       <workItem from="1733248655132" duration="2126000" />
-      <workItem from="1733325235730" duration="1851000" />
+      <workItem from="1733325235730" duration="4973000" />
     </task>
     <servers />
   </component>

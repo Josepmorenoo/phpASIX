@@ -66,4 +66,20 @@ class BookController {
         $book = (new \App\Models\Book)->find($id);
         return require '../resources/views/books/delete.blade.php';
     }
+    public function show($id) {
+        // Utilitzar una instància del model Book per obtenir les dades del llibre
+        $book = (new \App\Models\Book)->find($id);
+
+        // Comprovar si el llibre existeix
+        if (!$book) {
+            header("Location: /books");
+            exit();
+        }
+
+        // Carregar la vista i passar la variable $book
+        require_once __DIR__ . '/../../resources/views/books/show.blade.php';
+
+    }
+
+
 }

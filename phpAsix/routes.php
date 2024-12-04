@@ -15,6 +15,8 @@ return [
     '/books/delete/{id}' => '../App/Controllers/BookController.php@delete',
     '/books/destroy/{id}' => '../App/Controllers/BookController.php@destroy',
     '/books/confirm-delete/{id}' => '../App/Controllers/BookController.php@confirmDelete',
+    '/books/show/{id}' => '../App/Controllers/BookController.php@show',
+
 
     '/jugadors' => '../App/Controllers/JugadorsController.php@index',
     '/jugadors/create' => '../App/Controllers/JugadorsController.php@create',
@@ -24,4 +26,5 @@ return [
     '/jugadors/delete/{id}' => '../App/Controllers/JugadorsController.php@delete',
     '/jugadors/destroy/{id}' => '../App/Controllers/JugadorsController.php@destroy',
     '/jugadors/confirm-delete/{id}' => '../App/Controllers/JugadorsController.php@confirmDelete',
+    '/jugadors/show/{id}' => '../App/Controllers/JugadorsController.php@show',
 ];

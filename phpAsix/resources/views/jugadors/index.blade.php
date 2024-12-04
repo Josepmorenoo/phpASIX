@@ -128,11 +128,12 @@
     <?php foreach ($jugadors as $jugador): ?>
     <tr>
         <td><?= $jugador->id; ?></td>
-        <td><?= $jugador->name; ?></td> <!-- Canviat a 'name' -->
-        <td><?= $jugador->team; ?></td> <!-- Canviat a 'team' -->
-        <td><?= $jugador->position; ?></td> <!-- Canviat a 'position' -->
+        <td><?= $jugador->nom; ?></td> <!-- Canviat a 'name' -->
+        <td><?= $jugador->equip; ?></td> <!-- Canviat a 'team' -->
+        <td><?= $jugador->posicio; ?></td> <!-- Canviat a 'position' -->
         <td>
             <a href="/jugadors/edit/<?= $jugador->id ?>" class="btn btn-edit">Editar</a>
+            <a href="/jugadors/show/<?= $jugador->id ?>" class="btn">Veure detalls</a>
             <a href="/jugadors/confirm-delete/<?= $jugador->id ?>" class="btn btn-delete">Eliminar</a>
         </td>
     </tr>

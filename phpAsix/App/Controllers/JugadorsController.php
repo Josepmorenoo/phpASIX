@@ -7,23 +7,27 @@ use Core\View;
 class JugadorsController {
 
     public function index() {
-        $jugadors = Jugador::all(); // Obté tots els jugadors
-        require '../resources/views/jugadors/index.blade.php'; // Mostra la vista de la llista de jugadors
+        // Obtenir tots els jugadors
+        $jugadors = Jugador::all();
+
+        // Carregar la vista i passar la variable $jugadors
+        require_once __DIR__ . '/../../resources/views/jugadors/index.blade.php';
     }
+
 
     public function create() {
         require '../resources/views/jugadors/create.blade.php';
     }
 
     public function store() {
-        $name = $_POST['name'];
-        $team = $_POST['team'];
-        $position = $_POST['position'];
+        $nom = $_POST['name'];
+        $equip = $_POST['team'];
+        $posicio = $_POST['position'];
 
         $newJugador = new Jugador([
-            'name' => $name,
-            'team' => $team,
-            'position' => $position
+            'name' => $nom ,
+            'team' => $equip,
+            'position' => $posicio
         ]);
         $newJugador->save();
         header('Location: /jugadors');
@@ -57,7 +61,7 @@ class JugadorsController {
             exit();
         }
         $jugador = (new \App\Models\Jugador)->find($id);
-        return require '../resources/views/jugadors/delete.blade.php';
+        return require '../../resources/views/jugadors/delete.blade.php';
     }
 
     public function destroy($id) {
@@ -69,4 +73,19 @@ class JugadorsController {
         $jugador = (new \App\Models\Jugador)->find($id);
         return require '../resources/views/jugadors/delete.blade.php';
     }
+    public function show($id) {
+        // Utilitzar una instància del model Jugador per obtenir les dades del jugador
+        $jugador = (new \App\Models\Jugador)->find($id);
+
+        // Comprovar si el jugador existeix
+        if (!$jugador) {
+            header("Location: /jugadors");
+            exit();
+        }
+
+        // Carregar la vista i passar la variable $jugador
+        require_once __DIR__ . '/../../resources/views/jugadors/show.blade.php';
+    }
+
+
 }
